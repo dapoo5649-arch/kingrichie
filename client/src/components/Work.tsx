@@ -2,55 +2,55 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
-import webAppImage from "@assets/generated_images/Web_App_Dashboard_Interface_568d4cc4.png";
-import aiAutomationImage from "@assets/generated_images/AI_Automation_Workflow_Dashboard_430a3862.png";
-import replitWorkspaceImage from "@assets/generated_images/Replit_Development_Workspace_ddb70ed5.png";
-import mobileAppImage from "@assets/generated_images/Mobile_App_Device_Mockup_b37518e7.png";
-import apiIntegrationImage from "@assets/generated_images/API_Integration_Architecture_f044fb23.png";
-import fullStackImage from "@assets/generated_images/Full-Stack_Architecture_Diagram_f9d69284.png";
+import roofehero1 from "@assets/imgi_8_4b9b23d0-c5be-4c03-822d-bbcd45a1430d_1762534973915.jpeg";
+import roofehero2 from "@assets/imgi_14_19f2242f-52db-4359-98d5-ea8ebe529c70_1762534973921.jpeg";
+import roofehero3 from "@assets/imgi_15_33a2829c-5b0e-4e55-b733-501883178f08_1762534973922.jpeg";
+import fitToBee1 from "@assets/imgi_15_faa9ad94-314f-4a4c-9a64-4006741e4d6d_1762534973923.jpeg";
+import fitToBee2 from "@assets/imgi_16_1b9c6721-29c1-4c9c-878e-9a2c66a652c4_1762534973923.jpeg";
+import fitToBee3 from "@assets/imgi_22_c7cae878-8183-4a9e-b53a-8a09ea7e105a_1762534973928.jpeg";
 
 const projects = [
   {
     id: 1,
-    title: "E-Commerce Dashboard",
-    description: "Full-featured admin dashboard with real-time analytics, inventory management, and order tracking.",
-    image: webAppImage,
-    tags: ["Web App", "React", "TypeScript", "Tailwind"],
+    title: "Roofehero Website",
+    description: "Digital platform for roofing project management connecting contractors, teams, and clients with seamless tracking and collaboration.",
+    image: roofehero1,
+    tags: ["Web App", "UI/UX", "Project Management"],
   },
   {
     id: 2,
-    title: "AI Workflow Automation",
-    description: "Intelligent automation platform that streamlines business processes using AI-powered workflows.",
-    image: aiAutomationImage,
-    tags: ["AI Automation", "Node.js", "OpenAI", "API"],
+    title: "Roofehero Service Platform",
+    description: "Local availability and service promise platform with instant estimates and emergency leak repair scheduling.",
+    image: roofehero2,
+    tags: ["Web Development", "Service Platform", "UX"],
   },
   {
     id: 3,
-    title: "Replit Development Suite",
-    description: "Custom development environment and tools built on Replit for enhanced productivity.",
-    image: replitWorkspaceImage,
-    tags: ["Replit", "Developer Tools", "TypeScript"],
+    title: "Roofehero Mobile Experience",
+    description: "Mobile-responsive platform for getting multiple quotes from Sydney's best roofers with AI-powered accuracy.",
+    image: roofehero3,
+    tags: ["Mobile App", "Responsive Design", "AI Integration"],
   },
   {
     id: 4,
-    title: "Mobile Task Manager",
-    description: "Cross-platform mobile application for personal and team task management with offline support.",
-    image: mobileAppImage,
-    tags: ["Mobile App", "React Native", "Firebase"],
+    title: "Fit to Bee - Fitness App",
+    description: "Feature-rich fitness and wellness mobile app with personalized training sessions, activity tracking, and motivation challenges.",
+    image: fitToBee1,
+    tags: ["Mobile App", "Fitness", "UI/UX Design"],
   },
   {
     id: 5,
-    title: "Payment Gateway Integration",
-    description: "Secure payment processing system integrating multiple payment providers and fraud detection.",
-    image: apiIntegrationImage,
-    tags: ["API Integration", "Stripe", "Security"],
+    title: "Fit to Bee - User Journey",
+    description: "Smooth and immersive user experience for fitness enthusiasts with dark-themed interface and intuitive navigation.",
+    image: fitToBee2,
+    tags: ["UX Design", "Mobile Interface", "Dark Theme"],
   },
   {
     id: 6,
-    title: "Full-Stack SaaS Platform",
-    description: "Complete SaaS solution with authentication, subscription management, and microservices architecture.",
-    image: fullStackImage,
-    tags: ["Full-Stack", "PostgreSQL", "Docker", "AWS"],
+    title: "Fit to Bee - Branding & Identity",
+    description: "Complete branding solution with visual identity, app structure, and design process focused on user delight.",
+    image: fitToBee3,
+    tags: ["Branding", "Visual Identity", "App Design"],
   },
 ];
 
