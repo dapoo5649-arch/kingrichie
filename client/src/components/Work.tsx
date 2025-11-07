@@ -60,37 +60,40 @@ export default function Work() {
   };
 
   return (
-    <section id="work" className="py-20 md:py-32 px-6">
-      <div className="max-w-6xl mx-auto">
+    <section id="work" className="py-20 md:py-32 px-6 bg-muted/30">
+      <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-primary" data-testid="text-work-heading">
-            Projects Showcase
+          <Badge variant="secondary" className="mb-4 text-sm px-4 py-1" data-testid="badge-work">
+            Portfolio
+          </Badge>
+          <h2 className="text-4xl md:text-6xl font-bold mb-6 text-primary tracking-tight" data-testid="text-work-heading">
+            Featured Projects
           </h2>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-            A showcase of recent projects demonstrating expertise across web development, mobile apps, and UI/UX design
+          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            Real-world applications showcasing expertise across web development, mobile experiences, and modern UI/UX design
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {projects.map((project) => (
             <Card
               key={project.id}
-              className="overflow-hidden hover-elevate active-elevate-2 transition-all duration-300 hover:shadow-xl hover:shadow-primary/10 cursor-pointer group"
+              className="overflow-hidden hover-elevate active-elevate-2 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/20 hover:-translate-y-1 cursor-pointer group"
               data-testid={`card-project-${project.id}`}
             >
-              <div className="aspect-[4/3] overflow-hidden">
+              <div className="aspect-[4/3] overflow-hidden bg-gradient-to-br from-primary/5 to-primary/10">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   data-testid={`img-project-${project.id}`}
                 />
               </div>
-              <div className="p-6 space-y-3">
-                <h3 className="text-lg font-semibold text-primary" data-testid={`text-project-title-${project.id}`}>
+              <div className="p-6 space-y-4">
+                <h3 className="text-xl font-bold text-primary group-hover:text-primary/90 transition-colors" data-testid={`text-project-title-${project.id}`}>
                   {project.title}
                 </h3>
-                <p className="text-sm text-muted-foreground line-clamp-2" data-testid={`text-project-description-${project.id}`}>
+                <p className="text-sm text-muted-foreground leading-relaxed line-clamp-3" data-testid={`text-project-description-${project.id}`}>
                   {project.description}
                 </p>
                 <div className="flex flex-wrap gap-2 pt-2">
@@ -98,7 +101,7 @@ export default function Work() {
                     <Badge
                       key={index}
                       variant="secondary"
-                      className="font-mono text-xs"
+                      className="font-mono text-xs bg-primary/5 text-primary border border-primary/20"
                       data-testid={`badge-tag-${project.id}-${index}`}
                     >
                       {tag}
