@@ -60,37 +60,37 @@ export default function Work() {
   };
 
   return (
-    <section id="work" className="py-20 md:py-32 px-6 bg-muted/30">
+    <section id="work" className="py-20 md:py-32 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6" data-testid="text-work-heading">
-            Featured Work
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-primary" data-testid="text-work-heading">
+            Projects Showcase
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-            A showcase of recent projects demonstrating expertise across web development, AI automation, and modern tech stacks
+            A showcase of recent projects demonstrating expertise across web development, mobile apps, and UI/UX design
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {projects.map((project) => (
             <Card
               key={project.id}
-              className="overflow-hidden hover-elevate active-elevate-2 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 cursor-pointer"
+              className="overflow-hidden hover-elevate active-elevate-2 transition-all duration-300 hover:shadow-xl hover:shadow-primary/10 cursor-pointer group"
               data-testid={`card-project-${project.id}`}
             >
               <div className="aspect-[4/3] overflow-hidden">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   data-testid={`img-project-${project.id}`}
                 />
               </div>
               <div className="p-6 space-y-3">
-                <h3 className="text-xl font-semibold" data-testid={`text-project-title-${project.id}`}>
+                <h3 className="text-lg font-semibold text-primary" data-testid={`text-project-title-${project.id}`}>
                   {project.title}
                 </h3>
-                <p className="text-base text-muted-foreground line-clamp-2" data-testid={`text-project-description-${project.id}`}>
+                <p className="text-sm text-muted-foreground line-clamp-2" data-testid={`text-project-description-${project.id}`}>
                   {project.description}
                 </p>
                 <div className="flex flex-wrap gap-2 pt-2">

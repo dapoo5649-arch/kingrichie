@@ -16,70 +16,49 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20 md:py-32 px-6">
+    <section id="contact" className="py-20 md:py-32 px-6 bg-muted/30">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6" data-testid="text-contact-heading">
-            Let's Connect
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-primary" data-testid="text-contact-heading">
+            Get in Touch
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground">
-            Have a project in mind or want to collaborate? Feel free to reach out!
+            Let's collaborate or discuss your next Replit project.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6">
-          <Card className="p-8 hover-elevate active-elevate-2 transition-all duration-300 cursor-pointer" onClick={handlePhone} data-testid="card-contact-phone">
-            <div className="flex flex-col items-center text-center space-y-4">
-              <div className="p-4 bg-primary/10 rounded-full">
-                <Phone className="h-8 w-8 text-primary" />
-              </div>
-              <div>
-                <h3 className="font-semibold text-lg mb-2">Phone</h3>
-                <p className="text-muted-foreground" data-testid="text-phone">
-                  07051292695
-                </p>
-              </div>
-            </div>
-          </Card>
-
-          <Card className="p-8 hover-elevate active-elevate-2 transition-all duration-300 cursor-pointer" onClick={handleEmail} data-testid="card-contact-email">
-            <div className="flex flex-col items-center text-center space-y-4">
-              <div className="p-4 bg-primary/10 rounded-full">
-                <Mail className="h-8 w-8 text-primary" />
-              </div>
-              <div>
-                <h3 className="font-semibold text-lg mb-2">Email</h3>
-                <p className="text-muted-foreground break-all" data-testid="text-email">
-                  oladeleh140@gmail.com
-                </p>
-              </div>
-            </div>
-          </Card>
-
-          <Card className="p-8 hover-elevate active-elevate-2 transition-all duration-300 cursor-pointer" onClick={handleWhatsApp} data-testid="card-contact-whatsapp">
-            <div className="flex flex-col items-center text-center space-y-4">
-              <div className="p-4 bg-primary/10 rounded-full">
-                <MessageCircle className="h-8 w-8 text-primary" />
-              </div>
-              <div>
-                <h3 className="font-semibold text-lg mb-2">WhatsApp</h3>
-                <p className="text-muted-foreground">
-                  Chat on WhatsApp
-                </p>
-              </div>
-            </div>
-          </Card>
-        </div>
-
-        <div className="mt-12 text-center">
+        <div className="mt-12 text-center space-y-8">
           <Button
             size="lg"
-            onClick={handleEmail}
+            onClick={handleWhatsApp}
             className="rounded-full px-10"
-            data-testid="button-get-in-touch"
+            data-testid="button-whatsapp"
           >
-            Get in Touch
+            <MessageCircle className="h-5 w-5 mr-2" />
+            Chat on WhatsApp
           </Button>
+          <div className="space-y-3">
+            <div className="flex items-center justify-center gap-2 text-base">
+              <Mail className="h-5 w-5 text-primary" />
+              <a
+                href="mailto:oladeleh140@gmail.com"
+                className="text-muted-foreground hover:text-primary transition-colors hover-elevate active-elevate-2 px-2 py-1 rounded-md"
+                data-testid="link-email"
+              >
+                oladeleh140@gmail.com
+              </a>
+            </div>
+            <div className="flex items-center justify-center gap-2 text-base">
+              <Phone className="h-5 w-5 text-primary" />
+              <a
+                href="tel:07051292695"
+                className="text-muted-foreground hover:text-primary transition-colors hover-elevate active-elevate-2 px-2 py-1 rounded-md"
+                data-testid="link-phone"
+              >
+                07051292695
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>

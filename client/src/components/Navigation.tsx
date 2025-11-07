@@ -48,6 +48,13 @@ export default function Navigation() {
               About
             </button>
             <button
+              onClick={() => scrollToSection("services")}
+              className="text-base hover-elevate active-elevate-2 px-3 py-1.5 rounded-md"
+              data-testid="link-services"
+            >
+              Services
+            </button>
+            <button
               onClick={() => scrollToSection("work")}
               className="text-base hover-elevate active-elevate-2 px-3 py-1.5 rounded-md"
               data-testid="link-work"
@@ -87,6 +94,13 @@ export default function Navigation() {
               data-testid="link-mobile-about"
             >
               About
+            </button>
+            <button
+              onClick={() => scrollToSection("services")}
+              className="text-2xl font-semibold hover-elevate active-elevate-2 px-4 py-2 rounded-md"
+              data-testid="link-mobile-services"
+            >
+              Services
             </button>
             <button
               onClick={() => scrollToSection("work")}
