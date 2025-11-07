@@ -1,0 +1,40 @@
+Build me a minimal, type-driven personal portfolio website for **Oladele Habeeb**, a professional Replit Expert Developer specializing in vibe coding, AI automation, and Replit web app building.  
+
+🧠 Structure:
+- A clean, modern homepage with a hero section introducing “Oladele Habeeb – Replit Expert, AI & Vibe Coding Developer”.
+- Three navigation sections: **About**, **Work**, and **Contact**.
+- Use a type-driven layout with large fonts, generous whitespace, and subtle animation transitions.
+
+📜 About Section:
+Include a professional bio:
+“Hi, I’m Oladele Habeeb — a Replit Expert Developer passionate about vibe coding, AI automation, and building seamless web and app experiences using Replit, Supabase, and Bolt. I focus on crafting intuitive, modern, and high-performing web apps that merge creativity with technical precision.”
+
+📂 Work Section:
+- Create a mosaic gallery showcasing 6 sample projects.  
+- Generate mock project thumbnails using Replit-style screens, device frames, or futuristic workspace renders.
+- For each project, display: Title, short description, and tags (e.g., Web App, AI Automation, Debugging, API Integration).
+- Include a “Download One-Pager PDF” button that automatically generates a one-pager portfolio with cover art and project list.
+
+📞 Contact Section:
+Include clear contact info:
+- Phone: 07051292695  
+- WhatsApp: https://wa.me/qr/J67XGKAXNJ7BA1  
+- Optional contact form that sends messages to my email placeholder (use a dummy endpoint for now).
+
+🎨 Design:
+- Use a neutral, minimal palette (white, soft gray, accent blue or purple).
+- Font pairing: Sans-serif display for headings, readable body font.
+- Include responsive layout that looks great on desktop, tablet, and mobile.
+- Add a clean footer with © 2025 Oladele Habeeb — Replit Expert.
+
+📁 Features:
+- Auto-generate hero images and mock project screens from tags and palette.
+- Include a downloadable PDF portfolio one-pager with generated cover art.
+- Add smooth scroll, hover animations, and subtle shadows for cards.
+
+🧰 Tech Stack:
+- HTML + CSS + JavaScript (no frameworks)
+- Optionally, TailwindCSS for styling if available
+- Include comments in code for easy customization
+
+Output the complete code structure (HTML, CSS, JS) ready to deploy.
